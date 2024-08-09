@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dialog_bg"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:layout_marginBottom="@dimen/activity_horizontal_margin">
+
+
+        <TextView
+            android:id="@+id/tvSongName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="흐린 가을하늘에편지를 써"
+            android:textColor="@color/colorAccent"
+            android:textSize="38dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvArtistName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvSongName"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:text="10cm"
+            android:textColor="@android:color/black"
+            android:textSize="26dp" />
+
+
+        <TextView
+            android:id="@+id/tvDateName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvArtistName"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:text="YYYY-mm-dd"
+            android:textColor="#797979"
+            android:textSize="12dp"
+            android:textStyle="bold"
+            android:visibility="invisible"/>
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvDateName"
+            android:gravity="center"
+            android:text="予約しますか？ "
+            android:textColor="@android:color/black"
+            android:textSize="40dp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal">
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <ImageButton
+            android:id="@+id/okButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_rsv"
+            android:gravity="center"
+            android:text="예약"
+            android:textColor="#000000"
+            android:textSize="16dp" />
+
+        <Space
+            android:layout_width="4dp"
+            android:layout_height="wrap_content"
+            />
+
+        <ImageButton
+            android:id="@+id/cancelButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_cancel"
+            android:gravity="center"
+            android:text="취소"
+            android:textColor="#000000"
+            android:textSize="16dp" />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mic_button_halo"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:id="@+id/rlSearchArea"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_width="wrap_content"
+        android:background="@drawable/search_border"
+        android:layout_toLeftOf="@+id/selectLanguageSpinner"
+        android:layout_height="60dp">
+
+        <ImageButton
+            android:id="@+id/ibSearchVoice"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:scaleType="centerCrop"
+            android:layout_centerVertical="true"
+            android:background="@drawable/ico_ninano"
+            android:onClick="onActiionBtn"
+            />
+
+        <EditText
+            android:id="@+id/etQuery"
+            android:maxLines="1"
+            android:layout_toRightOf="@id/ibSearchVoice"
+            android:layout_toLeftOf="@+id/ibSearchBtn"
+            android:layout_width="wrap_content"
+            android:imeOptions="actionSearch"
+            android:inputType="text"
+            android:layout_height="match_parent" />
+
+        <ImageButton
+            android:id="@+id/ibSearchBtn"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:scaleType="centerCrop"
+            android:background="#ffffff"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ico_search"
+            android:onClick="onActiionBtn"
+            android:layout_alignParentRight="true"
+            />
+
+    </RelativeLayout>
+
+    <Spinner
+        android:layout_marginTop="8dp"
+        android:id="@+id/selectLanguageSpinner"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_alignParentRight="true"
+        android:entries="@array/lang"
+    />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_marginRight="8dp"
+        android:layout_marginLeft="8dp"
+
+        android:layout_below="@id/rlSearchArea"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="100"
+        android:progress="0" />
+
+    <LinearLayout
+        android:id="@+id/llSongEmpty"
+        android:layout_below="@id/progressBar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:background="#ffffff"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="@string/search_not_data_text"
+            android:textSize="17dp"
+            android:textStyle="bold"
+            />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lvSongList"
+        android:layout_below="@id/progressBar"
+        android:layout_width="match_parent"
+        android:divider="@color/aidialog_background"
+        android:layout_height="wrap_content"/>
+</RelativeLayout>

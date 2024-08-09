@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="view_alpha_background">#4Db4b4b4</color>
+    <color name="divider_color">#cfcfcf</color>
+
+    <color name="colorPrimary">#eeebe6</color>
+    <color name="colorPrimaryDark">#eeebe6</color>
+    <color name="colorPrimaryLight">#eeebe6</color>
+    <color name="colorPrimaryBoard">#eeebe6</color>
+
+    <color name="colorTransparent">#00000000</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorAccent">#ff4081</color>
+
+    <color name="colorTextDesc">#F2F2F2</color>
+    <color name="colorTextDesc2">#802E2A2F</color> //alpha 50% , 46,42,47
+    <color name="colorTextDesc3">#2E2A2F</color>
+    <color name="colorTextDesc4">#8F8D90</color>
+    <color name="colorTextDesc5">#99FFFFFF</color>
+    <color name="colorTextDescHint">#CCCCCC</color>
+
+    <color name="dot_active_color">#E30F73</color>
+    <color name="dot_inactive_color">#FFFFFF</color>
+
+    <color name="color_button_arrow_nomal">#00000000</color>
+    <color name="color_button_arrow_focus">#80E30F73</color>
+
+    <color name="color_button_sound_effect">#25FFFFFF</color>
+
+
+    <color name="color_normal_btn">#22000000</color>
+    <color name="color_normal_btn_focus">#66FF5500</color>
+    <color name="color_normal_btn_border">#FFff5500</color>
+    <color name="color_normal_btn_text">#FFFFFFFF</color>
+
+    <color name="colorTranslucent">#00000000</color>
+
+    <color name="egg_yellow">#ffcb15</color>
+    <color name="faceu_green">#2ddbb1</color>
+
+    <color name="c80000000">#80000000</color> <!--50%-->
+    <color name="percent60translucentBlack">#99000000</color>
+
+    <!-- Whites -->
+    <color name="white">#FFFFFF</color>
+
+    <color name="unselect_gray">#48FFFFFF</color>
+</resources>

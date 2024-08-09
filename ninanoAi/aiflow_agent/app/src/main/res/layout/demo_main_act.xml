@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/demo_main"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/ibTopBtn"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/demo_btn_top_off" />
+
+        <ImageButton
+            android:id="@+id/ibTopSingBtn"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/demo_top_sing_off" />
+
+        <CheckBox
+            android:id="@+id/cbToggle"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/checkbox_toggle_selector"
+            android:button="@android:color/transparent"
+            android:checked="false" />
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rlSearchArea"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#cc000000">
+
+        <LinearLayout
+            android:layout_width="790px"
+            android:layout_height="80px"
+            android:layout_centerInParent="true"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="12px"
+                android:background="#d52b2d" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="68px"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:paddingLeft="19px"
+                android:paddingRight="30px">
+
+                <ImageView
+                    android:layout_width="47px"
+                    android:layout_height="47px"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_marginRight="10px"
+                    android:src="@drawable/demo_search" />
+
+                <TextView
+                    android:id="@+id/etQuery"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:lineSpacingExtra="0pt"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:maxLines="1"
+                    android:hint="歌手名・曲名をはなしてください。"
+                    android:textSize="37px"
+                    android:text=""
+                    android:textStyle="bold"
+                    android:textColor="#202020"
+                    android:textColorHint="#cdcdcd" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+
+
+    <!--Bl check-->
+
+
+</FrameLayout>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/mic_bg">
+
+    <!--Bl check-->
+
+    <!--android:background="@drawable/round_mic"-->
+    <RelativeLayout
+        android:id="@+id/stt_ui"
+        android:layout_width="480dp"
+        android:layout_height="480dp"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="240dp"
+        android:layout_marginTop="450dp"
+        android:background="@android:color/transparent"
+        android:visibility="visible">
+
+        <RelativeLayout
+            android:id="@+id/rlVoiceIntoract"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:alpha="0.1"
+            android:background="@drawable/voicemonitor"></RelativeLayout>
+
+        <ImageView
+            android:id="@+id/ivMic"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/mic_off" />
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/tvLoading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/stt_ui"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="17.33dp"
+        android:gravity="center_vertical"
+        android:text=""
+        android:textColor="@color/white"
+        android:textSize="48dp"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:id="@+id/tvResultValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvLoading"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="17.33dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:text=""
+        android:textColor="@android:color/black"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

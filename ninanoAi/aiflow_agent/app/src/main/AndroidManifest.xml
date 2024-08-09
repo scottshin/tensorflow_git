@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ninano.karaoke.aiflow">
+
+
+    <application
+        android:name=".base.AIApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ico_ninano"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme_Default">
+
+        <!--<activity-->
+            <!--android:name=".DemoMainActivity"-->
+            <!--android:theme="@style/AppTheme_FullScreen_main"-->
+            <!--android:screenOrientation="landscape"-->
+            <!--&gt;-->
+            <!--<intent-filter>-->
+                <!--<action android:name="android.intent.action.MAIN" />-->
+                <!--<category android:name="android.intent.category.LAUNCHER" />-->
+            <!--</intent-filter>-->
+
+        <!--</activity>-->
+
+        <activity
+            android:name=".DemoMainActivity"
+            android:theme="@style/AppTheme_FullScreen_main"
+            />
+
+        <activity
+            android:name=".SpeachActivity"
+            android:theme="@style/AppTheme_FullScreen_main"
+
+            />
+
+
+        <activity
+            android:name=".DemoResultListActivity"
+            android:theme="@style/AppTheme_FullScreen_main"
+            />
+
+
+        <activity
+            android:name=".ReservedListActivity"
+            android:theme="@style/AppTheme_FullScreen_main"
+            />
+
+
+
+        <!--<activity-->
+            <!--android:name=".MainActivity"-->
+            <!--android:theme="@style/AppTheme_FullScreen_main"-->
+            <!--android:screenOrientation="landscape"-->
+            <!--/>-->
+
+        <activity
+            android:name=".IntroActivity"
+            android:theme="@style/AppTheme_FullScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+
+
+    </application>
+
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+
+    <uses-permission android:name="android.permission.GET_TASKS" />
+
+
+</manifest>

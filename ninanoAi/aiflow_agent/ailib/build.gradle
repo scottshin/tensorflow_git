@@ -1,0 +1,56 @@
+apply plugin: 'com.android.library'
+//apply plugin: 'com.neenbedankt.android-apt'       // deprecte
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion '28.0.3'
+
+    defaultConfig {
+        minSdkVersion 19
+        targetSdkVersion 25
+        versionName project.VERSION_NAME
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    buildTypes {
+        release {
+            // proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+            buildConfigField "int", "TESTS_SDK", "22"
+        }
+        debug{
+            buildConfigField "int", "TESTS_SDK", "22"
+        }
+    }
+    productFlavors {
+    }
+
+    packagingOptions {
+    }
+}
+
+dependencies {
+    repositories {
+        mavenLocal()
+        mavenCentral()
+    }
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile 'com.android.support:support-v4:25.0.1'
+    compile 'ai.api:libai:1.6.11'
+    testCompile 'org.slf4j:slf4j-android:1.7.25'
+    testCompile 'junit:junit:4.12'
+    testCompile 'org.assertj:assertj-core:1.7.0'
+    testCompile 'org.robolectric:robolectric:3.1.2'
+}
+
+apply from: '../gradle-mvn-push.gradle'
+
+// block for building library jars
+android.libraryVariants.all { variant ->
+  def name = variant.buildType.name
+  def task = project.tasks.create "jar${name.capitalize()}", Jar
+  task.dependsOn variant.javaCompile
+  task.from variant.javaCompile.destinationDir
+  artifacts.add('archives', task);
+}

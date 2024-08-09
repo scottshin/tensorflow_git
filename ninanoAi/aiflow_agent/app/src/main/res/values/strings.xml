@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string name="app_name">JoySound</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="title_activity_aibutton_sample">AIButtonSampleActivity</string>
+    <string name="title_activity_aiservice_sample">AIServiceSample</string>
+    <string name="title_activity_aidialog_sample">AIDialogSample</string>
+    <string name="title_activity_aitext_sample">AITextSample</string>
+    <string name="service_sample_text">Service sample</string>
+    <string name="button_sample_text">Button sample</string>
+    <string name="dialog_sample_text">Dialog sample</string>
+    <string name="text_sample_text">Text sample</string>
+    <string name="title_app_widget">Voice command</string>
+    <string name="non_empty_query">Query should not be empty</string>
+
+    <string name="use_bluetooth_headset">Use Bluetooth headset</string>
+
+    <!-- KSJ -->
+    <!--1:title 2:genre 3:singer 4:created-->
+    <string name="adapter_item_song_content_text">%1$s  %2$s  %3$s  %4$s</string>
+    <string name="adapter_item_song_content_title_format">"곡:%1$s"</string>
+    <string name="adapter_item_song_content_albume_format">"앨범:%1$s"</string>
+    <string name="adapter_item_song_content_date_format">"%1$s"</string>
+    <string name="adapter_item_song_content_artist_format">"아티스트:%1$s"</string>
+    <string name="search_not_data_text">"검색된 노래가 없습니다."</string>
+    <string name="search_xml_parser_url">"http://www.maniadb.com/api/search/%1$s/?sr=%2$s&amp;display=1&amp;key=example&amp;v=0.5"</string>
+
+    <!--  DeviceListActivity -->
+    <string name="scanning">scanning for devices...</string>
+    <string name="select_device">select a device to connect</string>
+    <string name="none_paired">No devices have been paired</string>
+    <string name="none_found">No devices found</string>
+    <string name="title_paired_devices">Paired Devices</string>
+    <string name="title_other_devices">Other Available Devices</string>
+    <string name="button_scan">Scan for devices</string>
+
+
+    <!--  BluetoothChat -->
+    <string name="send">Send</string>
+    <string name="not_connected">You are not connected to a device</string>
+    <string name="bt_not_enabled_leaving">Leaving Bluetooth</string>
+    <string name="title_connecting">접속중...</string>
+    <string name="title_connected_to">접속완료 : [<xliff:g id="device_name">%1$s</xliff:g>]</string>
+    <string name="title_not_connected">접속실패</string>
+
+
+    <!-- Options Menu -->
+
+    <string name="mic_text_wait">使用待機</string>
+    <string name="mic_text_talk">話してください。</string>
+    <string name="mic_text_finish">使用完了</string>
+
+    <string name="google_reco_not_matching">また,話してください。</string>
+    <string name="google_reco_timeout">タイムアウトになりました。またマイクを押してください。</string>
+</resources>

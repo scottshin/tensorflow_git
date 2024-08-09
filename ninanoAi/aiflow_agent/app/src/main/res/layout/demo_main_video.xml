@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/demo_main_hor"
+    android:orientation="vertical">
+
+
+    <VideoView
+        android:id="@+id/videoView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true" />
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tvCloud"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="150dp"
+            android:layout_marginTop="220dp"
+            android:background="@drawable/bubble"
+            android:text="Reserved?:"
+            android:textSize="48dp"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:id="@+id/rlSearchArea"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="#cc000000"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="790px"
+                android:layout_height="80px"
+                android:layout_centerInParent="true"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="47px"
+                    android:layout_height="47px"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_marginRight="10px"
+                    android:src="@drawable/demo_search" />
+
+                <TextView
+                    android:id="@+id/etQuery"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:hint="歌手名・曲名をはなしてください。"
+                    android:lineSpacingExtra="0pt"
+                    android:maxLines="1"
+                    android:text=""
+                    android:textColor="#202020"
+                    android:textColorHint="#cdcdcd"
+                    android:textSize="37px"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+    </FrameLayout>
+
+
+    <!--Bl check-->
+
+
+</FrameLayout>

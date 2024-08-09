@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.qn.microphone.activity.AudioRecordActivity">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="48dp"
+                android:text="Recording Test App" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Input Source :" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <RadioButton
+                    android:text="MIC"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/radioButton1"
+                    android:layout_weight="1" />
+
+                <RadioButton
+                    android:text="VOICE_UPLINK"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/radioButton2"
+                    android:layout_weight="1" />
+
+                <RadioButton
+                    android:text="VOICE_DOWNLINK"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/radioButton3"
+                    android:layout_weight="1" />
+
+                <RadioButton
+                    android:text="VOICE_CALL"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/radioButton4"
+                    android:layout_weight="1" />
+
+                <RadioButton
+                    android:text="CAMCORDER"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/radioButton5"
+                    android:layout_weight="1" />
+
+                <RadioButton
+                    android:text="VOICE_RECOGNITION"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:id="@+id/radioButton6"
+                    android:layout_weight="1" />
+
+                <RadioButton
+                    android:text="VOICE_COMMUNICATION"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/radioButton7"
+                    android:layout_weight="1" />
+
+                <RadioButton
+                    android:text="REMOTE_SUBMIX"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/radioButton8"
+                    android:layout_weight="1" />
+            </RadioGroup>
+
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="Method :"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+            <RadioButton
+                android:text="MIC ONLY"
+                android:id="@+id/buttonMIC"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"  />
+
+            <RadioButton
+                android:text="MIC+MUSIC"
+                android:id="@+id/buttonMIX"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp" />
+
+            </RadioGroup>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="Method :"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <Button
+                android:text="Recording"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/buttonREC" />
+
+            <Button
+                android:id="@+id/buttonPLAY"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:text="PLAY" />
+
+            <Button
+                android:id="@+id/buttonMIDI"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Play MIDI" />
+
+            <Button
+                android:id="@+id/buttonWAVE"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Play WAVE" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+</RelativeLayout>
